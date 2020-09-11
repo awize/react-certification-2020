@@ -1,12 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import App from './components/App';
-import './global.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>Initial</div>
   </React.StrictMode>,
   document.getElementById('root')
-);
+)
