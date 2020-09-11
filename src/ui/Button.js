@@ -25,7 +25,8 @@ Button.defaultProps = {
 }
 
 Button.propTypes = {
-  variant: PropTypes.oneOf(['primary', 'secondary'])
+  /** What kind of button to you want to render? */
+  variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary'])
 }
 
 export default Button
