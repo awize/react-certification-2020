@@ -20,7 +20,6 @@ const VideoCardContainer = styled(Flex)`
 const VideosList = () => {
   const { videos } = useSearcher()
 
-  console.log({ videos })
   return (
     <VideoListStyled container direction="column">
       {videos

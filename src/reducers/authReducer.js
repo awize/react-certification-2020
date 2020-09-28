@@ -1,18 +1,21 @@
 import TYPE from './type'
 
 export const initialState = {
-  isLogged: false,
-  username: '',
-  email: ''
+  isLogged: !!JSON.parse(localStorage.getItem('auth') || '{}').name,
+  name: JSON.parse(localStorage.getItem('auth') || '{}').name,
+  id: JSON.parse(localStorage.getItem('auth') || '{}').id,
+  avatarUrl: JSON.parse(localStorage.getItem('auth') || '{}').avatarUrl
 }
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {
     case TYPE.LOG_IN_SUCCESS: {
-      const { username, email } = payload
-      return { ...state, isLogged: true, username, email }
+      const { name, id, avatarUrl } = payload
+      localStorage.setItem('auth', JSON.stringify({ name, id, avatarUrl }))
+      return { ...state, isLogged: true, name, id, avatarUrl }
     }
     case TYPE.LOG_OUT_SUCCESS: {
+      localStorage.setItem('auth')
       return { ...initialState }
     }
     default:

@@ -5,7 +5,7 @@ import { useYoutubeAPI } from 'hooks'
 import { Eye, Like } from 'ui/Icons'
 import { Flex, Button, Text } from 'ui'
 import { formatSingleVideo } from 'utils/helpers'
-import VideoDetailJSON from '../../__mocks__/videoDetail.json'
+import { useAuth } from 'providers'
 
 const StatisticContainerStyled = styled(Flex)`
   svg {
@@ -22,19 +22,22 @@ const VideoContainerStyled = styled.iframe`
   border: 0;
 `
 const VideoPlayer = () => {
+  const { isLogged } = useAuth()
   const { videoId } = useParams()
   const youtubeAPI = useYoutubeAPI()
   const [videoData, setVideoData] = useState({})
 
   const getVideoData = useCallback(async () => {
-    if (youtubeAPI && !VideoDetailJSON) {
+    if (youtubeAPI) {
       const response = await youtubeAPI.videos.list({
         part: 'snippet,statistics,player',
         id: videoId
       })
-      console.log({ response })
+
+      if (response) {
+        setVideoData(formatSingleVideo(response))
+      }
     }
-    setVideoData(formatSingleVideo(VideoDetailJSON))
   }, [videoId, youtubeAPI])
 
   useEffect(() => {
@@ -91,7 +94,7 @@ const VideoPlayer = () => {
             )
           })}
         </Flex>
-        <Button>Agregar a favoritos</Button>
+        {isLogged ? <Button>Agregar a favoritos</Button> : <div />}
       </Flex>
       <hr />
       <Text

@@ -25,9 +25,7 @@ export const useAuth = () => {
     throw new Error('AuthContext.Provider not found')
   }
 
-  const { dispatch, ...state } = context
-
-  return [state, dispatch]
+  return context
 }
 
 export default AuthProvider

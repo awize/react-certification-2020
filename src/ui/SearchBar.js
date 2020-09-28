@@ -8,12 +8,18 @@ const SearchBar = ({ defaultValue, onChange, value: valueProp, onSearch }) => {
   const isControlled = valueProp !== undefined
 
   const value = isControlled ? valueProp : valueState
-  console.log({ isControlled, value, valueProp })
+
   const handleChange = (e) => {
     if (isControlled) {
       onChange(e)
     } else {
       setValueState(e.target.value)
+    }
+  }
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      onSearch(value)
     }
   }
 
@@ -44,6 +50,7 @@ const SearchBar = ({ defaultValue, onChange, value: valueProp, onSearch }) => {
           onChange={handleChange}
           value={value}
           defaultValue={defaultValue}
+          onKeyPress={handleKeyPress}
         />
       </Flex>
       <button

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router'
 import styled from 'styled-components'
 import { Text } from 'ui'
 
@@ -12,6 +13,10 @@ const SuggestedVideoCardContainer = styled.div`
     0 10px 11.5px rgba(0, 0, 0, 0.036), 0 49px 38px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
   overflow: hidden;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 13.5px 10px rgba(0, 0, 0, 0.068), 0 100px 80px rgba(0, 0, 0, 0.07);
+  }
 `
 
 const CoverImageStyled = styled.img`
@@ -20,9 +25,10 @@ const CoverImageStyled = styled.img`
   background-color: #000;
   object-fit: contain;
 `
-const SuggestedVideoCard = ({ title, thumbnail }) => {
+const SuggestedVideoCard = ({ title, thumbnail, videoId }) => {
+  const history = useHistory()
   return (
-    <SuggestedVideoCardContainer>
+    <SuggestedVideoCardContainer onClick={() => history.push(`/video/${videoId}`)}>
       <CoverImageStyled src={thumbnail} alt="" />
       <Text
         css={`

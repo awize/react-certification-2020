@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react'
+import { useRouteMatch, useHistory } from 'react-router-dom'
 import { SearchBar } from 'ui'
 import { useSearcher } from 'providers'
 import { useYoutubeAPI } from 'hooks'
@@ -6,6 +7,8 @@ import { formatVideosResponse } from 'utils/helpers'
 import TYPE from 'reducers/type'
 
 const VideoSearchBar = () => {
+  const match = useRouteMatch('/')
+  const history = useHistory()
   const [q, setQ] = useState('Wizeline')
   const { dispatch } = useSearcher()
   const youtubeAPI = useYoutubeAPI()
@@ -36,10 +39,18 @@ const VideoSearchBar = () => {
 
   useEffect(() => {
     searchVideos(q)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchVideos])
 
+  const onSearch = (param) => {
+    searchVideos(param)
+    if (!match.isExact) {
+      history.push('/')
+    }
+  }
+
   return (
-    <SearchBar onSearch={searchVideos} value={q} onChange={(e) => setQ(e.target.value)} />
+    <SearchBar onSearch={onSearch} value={q} onChange={(e) => setQ(e.target.value)} />
   )
 }
 

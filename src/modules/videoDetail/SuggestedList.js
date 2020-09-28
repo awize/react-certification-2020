@@ -2,7 +2,7 @@ import React, { useEffect, useCallback, useState } from 'react'
 import { useParams } from 'react-router'
 import { useYoutubeAPI } from 'hooks'
 import { Flex, Text } from 'ui'
-import relatedVideos from '../../__mocks__/relatedVideos.json'
+
 import SuggestedVideoCard from './SuggestedVideoCard'
 import { formatVideosResponse } from '../../utils/helpers'
 
@@ -13,20 +13,14 @@ const SuggestedList = () => {
 
   const getSuggestedVideos = useCallback(async () => {
     if (youtubeAPI) {
-      if (youtubeAPI !== -1) {
-        setsuggestedVideos(() => {
-          const videos = formatVideosResponse(relatedVideos)
-
-          return videos
-        })
-      } else {
-        const response = await youtubeAPI.search.list({
-          part: ['snippet'],
-          maxResults: 12,
-          relatedToVideoId: videoId,
-          type: 'video'
-        })
-        setsuggestedVideos(response)
+      const response = await youtubeAPI.search.list({
+        part: ['snippet'],
+        maxResults: 12,
+        relatedToVideoId: videoId,
+        type: 'video'
+      })
+      if (response) {
+        setsuggestedVideos(formatVideosResponse(response))
       }
     }
   }, [videoId, youtubeAPI])
@@ -49,7 +43,7 @@ const SuggestedList = () => {
       <Flex container wrap="wrap">
         {suggestedVideos.map((suggestedVideo) => (
           <Flex
-            key={`suggest-${suggestedVideo.id}`}
+            key={`suggest-${suggestedVideo.videoId}`}
             col={12}
             css={`
               padding: 10px;

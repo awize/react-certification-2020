@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { Flex, Drawer, Button } from 'ui'
 import { VideoSearchBar } from 'modules/videosSearcher'
+import { LoginModal } from 'modules/login'
+import { useAuth } from 'providers'
 
 const NavContainerStyled = styled(Flex)`
   background-color: #fff;
@@ -41,7 +43,11 @@ const ListItem = styled(Link)`
   }
 `
 const Nav = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const [isMenuOpened, setIsMenuOpened] = useState(false)
+  const { state } = useAuth()
+  const { isLogged, avatarUrl } = state
+  console.log({ state })
   const toggleMenu = () => {
     setIsMenuOpened(!isMenuOpened)
   }
@@ -59,6 +65,11 @@ const Nav = () => {
     }
   ]
 
+  useEffect(() => {
+    if (isLogged) {
+      setIsModalOpen(false)
+    }
+  }, [isLogged])
   return (
     <>
       <NavContainerStyled />
@@ -67,7 +78,26 @@ const Nav = () => {
           Menu
         </Button>
         <VideoSearchBar />
-        <Button>Iniciar Sesión</Button>
+        {isLogged ? (
+          <Flex
+            container
+            center
+            inline
+            css={`
+              height: 100%;
+            `}
+          >
+            <img
+              src={avatarUrl}
+              alt=""
+              css={`
+                height: 80%;
+              `}
+            />
+          </Flex>
+        ) : (
+          <Button onClick={() => setIsModalOpen(true)}>Iniciar Sesión</Button>
+        )}
       </NavContainerStyled>
 
       <DrawerStyled open={isMenuOpened} onToggleMenu={toggleMenu}>
@@ -79,6 +109,7 @@ const Nav = () => {
           )
         })}
       </DrawerStyled>
+      <LoginModal open={isModalOpen} onClose={setIsModalOpen} />
     </>
   )
 }

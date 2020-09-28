@@ -9,7 +9,6 @@ const SvgIconStyled = styled(SvgIcon)`
 `
 const createSvgIcon = (path, displayName = '', viewBox) => {
   let Icon = ({ className, ...props }) => {
-    console.log({ className })
     return (
       <SvgIconStyled {...props} viewBox={viewBox}>
         {path}

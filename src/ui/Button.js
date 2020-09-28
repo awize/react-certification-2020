@@ -8,7 +8,6 @@ const ButtonStyled = styled.button`
   min-width: ${({ theme }) => theme.mixins.rem('100')};
 
   ${({ variant, theme }) => {
-    console.log(theme)
     return css`
       background-color: ${theme.palette[variant].main};
       color: ${theme.palette[variant].mainContrast};

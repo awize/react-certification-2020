@@ -1,9 +1,10 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router-dom'
+import { useAuth } from 'providers'
 
 const PrivateRoute = (props) => {
-  const isLogged = Date.now() % 2
-  return isLogged ? <Route {...props} /> : <Redirect to="/login" />
+  const { state } = useAuth()
+  return state.isLogged ? <Route {...props} /> : <Redirect to="/" />
 }
 
 PrivateRoute.propTypes = {}
