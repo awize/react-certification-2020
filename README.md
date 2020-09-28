@@ -36,7 +36,7 @@ If you want to see how does the app look, you can go to the following link.
 - [x] Fetch results from YouTube API (keep reading for more details)
 - [x] Search videos by name
 - [x] User Authentication (keep reading for more details)
-- [] Unit Tests Coverage (~70%)
+- [ ] Unit Tests Coverage (~70%)
 
 ## How to log in
 
