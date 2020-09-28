@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import { Flex, Drawer, Button } from 'ui'
+import { Link, useLocation } from 'react-router-dom'
+import { Flex, Drawer, Button, Text } from 'ui'
 import { VideoSearchBar } from 'modules/videosSearcher'
 import { LoginModal } from 'modules/login'
 import { useAuth } from 'providers'
+import TYPE from 'reducers/type'
 
 const NavContainerStyled = styled(Flex)`
   background-color: #fff;
@@ -45,9 +46,10 @@ const ListItem = styled(Link)`
 const Nav = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isMenuOpened, setIsMenuOpened] = useState(false)
-  const { state } = useAuth()
-  const { isLogged, avatarUrl } = state
-  console.log({ state })
+  const { state, dispatch } = useAuth()
+  const { isLogged, avatarUrl, name } = state
+  const { pathname } = useLocation()
+
   const toggleMenu = () => {
     setIsMenuOpened(!isMenuOpened)
   }
@@ -59,6 +61,7 @@ const Nav = () => {
       text: 'Inicio'
     },
     {
+      show: isLogged,
       id: 'menu__favorites',
       to: '/favorites',
       text: 'Favoritos'
@@ -70,6 +73,12 @@ const Nav = () => {
       setIsModalOpen(false)
     }
   }, [isLogged])
+
+  useEffect(() => {
+    if (isMenuOpened) {
+      setIsMenuOpened(false)
+    }
+  }, [pathname])
   return (
     <>
       <NavContainerStyled />
@@ -92,8 +101,16 @@ const Nav = () => {
               alt=""
               css={`
                 height: 80%;
+                margin-right: 10px;
               `}
             />
+            <Text
+              css={`
+                font-size: 21px;
+              `}
+            >
+              {name}
+            </Text>
           </Flex>
         ) : (
           <Button onClick={() => setIsModalOpen(true)}>Iniciar Sesión</Button>
@@ -101,13 +118,37 @@ const Nav = () => {
       </NavContainerStyled>
 
       <DrawerStyled open={isMenuOpened} onToggleMenu={toggleMenu}>
-        {menuOptions.map(({ to, text, id }) => {
-          return (
-            <ListItem key={id} to={`${to}`}>
-              {text}
-            </ListItem>
-          )
-        })}
+        <Flex
+          container
+          direction="column"
+          css={`
+            height: 100%;
+          `}
+        >
+          <Flex col="auto">
+            {menuOptions.map(({ to, text, id, show = true }) => {
+              return show ? (
+                <ListItem key={id} to={`${to}`}>
+                  {text}
+                </ListItem>
+              ) : null
+            })}
+          </Flex>
+
+          {isLogged && (
+            <Button
+              variant="alert"
+              css={`
+                margin: 10px auto;
+              `}
+              onClick={() => {
+                dispatch({ type: TYPE.LOG_OUT_SUCCESS })
+              }}
+            >
+              Cerrar Sesión
+            </Button>
+          )}
+        </Flex>
       </DrawerStyled>
       <LoginModal open={isModalOpen} onClose={setIsModalOpen} />
     </>

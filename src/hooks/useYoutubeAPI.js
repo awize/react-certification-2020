@@ -1,21 +1,23 @@
 /* global gapi */
 import { useEffect, useState } from 'react'
 
-const useGoogleAPI = () => {
+const useYoutubeAPI = () => {
   const [youtubeApi, setYoutubeApi] = useState(null)
-
+  const { gapi: { client } = {} } = window
   const initGAPI = () => {
-    gapi.client.setApiKey(process.env.REACT_APP_GOOGLE_API_KEY)
-    gapi.client.load('youtube', 'v3', () => {
-      setYoutubeApi(gapi.client.youtube)
-    })
+    setTimeout(() => {
+      window.gapi.client.setApiKey(process.env.REACT_APP_GOOGLE_API_KEY)
+      window.gapi.client.load('youtube', 'v3', () => {
+        setYoutubeApi(gapi.client.youtube)
+      })
+    }, 0)
   }
 
   useEffect(() => {
-    initGAPI()
-  }, [])
+    if (client) initGAPI()
+  }, [client])
 
   return youtubeApi
 }
 
-export default useGoogleAPI
+export default useYoutubeAPI

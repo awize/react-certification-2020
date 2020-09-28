@@ -15,8 +15,8 @@ export default (state = initialState, { type, payload }) => {
       return { ...state, isLogged: true, name, id, avatarUrl }
     }
     case TYPE.LOG_OUT_SUCCESS: {
-      localStorage.setItem('auth')
-      return { ...initialState }
+      localStorage.clear()
+      return { isLogged: false, name: '', id: '', avatarUrl: '' }
     }
     default:
       return state

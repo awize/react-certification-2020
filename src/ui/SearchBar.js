@@ -27,10 +27,11 @@ const SearchBar = ({ defaultValue, onChange, value: valueProp, onSearch }) => {
     <Flex
       container
       css={`
+        height: 45px;
         width: 400px;
         max-width: 100%;
         border-radius: 25px;
-        background-color: #073437;
+
         box-shadow: 0px 4px 8px rgba(58, 58, 68, 0.16),
           0px 8px 16px rgba(90, 91, 106, 0.16);
         overflow: hidden;

@@ -1,11 +1,12 @@
 import React, { useEffect, useState, useCallback } from 'react'
-import { useParams } from 'react-router'
+import { useParams, Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { useYoutubeAPI } from 'hooks'
 import { Eye, Like } from 'ui/Icons'
 import { Flex, Button, Text } from 'ui'
 import { formatSingleVideo } from 'utils/helpers'
-import { useAuth } from 'providers'
+import { useAuth, useFavorites } from 'providers'
+import TYPE from 'reducers/type'
 
 const StatisticContainerStyled = styled(Flex)`
   svg {
@@ -22,10 +23,18 @@ const VideoContainerStyled = styled.iframe`
   border: 0;
 `
 const VideoPlayer = () => {
-  const { isLogged } = useAuth()
+  const {
+    state: { isLogged }
+  } = useAuth()
+  const {
+    state: { favoriteVideos },
+    dispatch
+  } = useFavorites()
   const { videoId } = useParams()
   const youtubeAPI = useYoutubeAPI()
   const [videoData, setVideoData] = useState({})
+  const isAlreadyFavorite =
+    favoriteVideos.filter((favorite) => favorite.videoId === videoId).length > 0
 
   const getVideoData = useCallback(async () => {
     if (youtubeAPI) {
@@ -54,6 +63,40 @@ const VideoPlayer = () => {
       value: videoData.likeCount || 0
     }
   ]
+
+  const getCorrectButton = () => {
+    if (!isLogged) return null
+    if (isAlreadyFavorite)
+      return (
+        <Flex container inline center>
+          <Link
+            to="/favorites"
+            css={`
+              margin-right: 20px;
+            `}
+          >
+            Ir a favoritos
+          </Link>
+          <Button
+            variant="alert"
+            onClick={() =>
+              dispatch({ type: TYPE.REMOVE_FAVORITE_VIDEO, payload: videoId })
+            }
+          >
+            Eliminar de Favorites
+          </Button>
+        </Flex>
+      )
+    return (
+      <Button
+        onClick={() =>
+          dispatch({ type: TYPE.ADD_FAVORITE_VIDEO, payload: { ...videoData, videoId } })
+        }
+      >
+        Agregar de Favorites
+      </Button>
+    )
+  }
   return (
     <div
       css={`
@@ -94,7 +137,8 @@ const VideoPlayer = () => {
             )
           })}
         </Flex>
-        {isLogged ? <Button>Agregar a favoritos</Button> : <div />}
+
+        {getCorrectButton()}
       </Flex>
       <hr />
       <Text

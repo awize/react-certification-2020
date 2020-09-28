@@ -33,19 +33,21 @@ export const formatSingleVideo = (videoInfo) => {
   if (items.length > 0) {
     const currentVideo = items[0]
     const {
+      id: { videoId },
       snippet: {
         title,
         description,
-        thumbnails: { high }
+        thumbnails: { high = {} }
       },
       statistics: { viewCount, likeCount }
     } = currentVideo
     formattedInfo = {
+      videoId,
       title,
       description,
       viewCount,
       likeCount,
-      high
+      thumbnail: high.url
     }
   }
   return formattedInfo
