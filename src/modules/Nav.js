@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Flex, Drawer, Button, Text } from 'ui'
 import { VideoSearchBar } from 'modules/videosSearcher'
 import { LoginModal } from 'modules/login'
@@ -48,7 +48,6 @@ const Nav = () => {
   const [isMenuOpened, setIsMenuOpened] = useState(false)
   const { state, dispatch } = useAuth()
   const { isLogged, avatarUrl, name } = state
-  const { pathname } = useLocation()
 
   const toggleMenu = () => {
     setIsMenuOpened(!isMenuOpened)
@@ -74,11 +73,6 @@ const Nav = () => {
     }
   }, [isLogged])
 
-  useEffect(() => {
-    if (isMenuOpened) {
-      setIsMenuOpened(false)
-    }
-  }, [pathname])
   return (
     <>
       <NavContainerStyled />
@@ -128,7 +122,7 @@ const Nav = () => {
           <Flex col="auto">
             {menuOptions.map(({ to, text, id, show = true }) => {
               return show ? (
-                <ListItem key={id} to={`${to}`}>
+                <ListItem key={id} to={`${to}`} onClick={() => setIsMenuOpened(false)}>
                   {text}
                 </ListItem>
               ) : null
@@ -143,6 +137,7 @@ const Nav = () => {
               `}
               onClick={() => {
                 dispatch({ type: TYPE.LOG_OUT_SUCCESS })
+                setIsMenuOpened(false)
               }}
             >
               Cerrar Sesión
