@@ -16,7 +16,9 @@ const LoginModal = (props) => {
       dispatch({ type: TYPE.LOG_IN_SUCCESS, payload: response })
     } catch (e) {
       setError(
-        e.message === 'Username or password invalid' && 'Usuario o contraseña invalida'
+        e.message === 'Username or password invalid'
+          ? 'Credenciales inválidas'
+          : 'Error inesperado, intentalo más tarde'
       )
     }
   }
