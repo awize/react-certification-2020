@@ -3,7 +3,7 @@ import React, { useState, useContext } from 'react'
 import PropTypes from 'prop-types'
 
 const FormContext = React.createContext()
-const Form = ({ onSubmit, initialValues, ...props }) => {
+const Form = ({ onSubmit, onChange: onFormChange, initialValues, ...props }) => {
   const [form, setForm] = useState(initialValues)
 
   const onChange = (e) => {
@@ -14,6 +14,7 @@ const Form = ({ onSubmit, initialValues, ...props }) => {
       ...form,
       [name]: value
     })
+    onFormChange()
   }
 
   const handleSubmit = () => {
@@ -33,12 +34,13 @@ Form.defaultProps = {
 Form.propTypes = {
   initialValues: PropTypes.object
 }
+
 export const useForm = () => {
   const context = useContext(FormContext)
   return context
 }
 
-export const withForm = (Component) => ({ name }) => {
+export const withForm = (Component) => ({ name, ...rest }) => {
   const context = useForm()
   let childProps = {}
 
@@ -49,7 +51,8 @@ export const withForm = (Component) => ({ name }) => {
       value: name ? form[name] : undefined,
       onChange,
       handleSubmit,
-      name
+      name,
+      ...rest
     }
   }
 
