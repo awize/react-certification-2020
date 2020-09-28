@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "ui": "./src/ui",
+          "modules": "./src/modules",
+          "pages": "./src/pages",
+          "providers": "./src/providers",
+          "reducers": "./src/reducers",
+          "hooks": "./src/hooks",
+          "utils": "./src/utils"
+        }
+      }
+    ],
+    "babel-plugin-styled-components"
+  ]
+}

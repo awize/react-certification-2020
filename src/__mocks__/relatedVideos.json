@@ -1,0 +1,395 @@
+{
+  "result": {
+    "kind": "youtube#searchListResponse",
+    "etag": "HjQU-oDJv_rutYRNSJfn04T5wlQ",
+    "nextPageToken": "CAwQAA",
+    "regionCode": "MX",
+    "pageInfo": { "totalResults": 88, "resultsPerPage": 12 },
+    "items": [
+      {
+        "kind": "youtube#searchResult",
+        "etag": "aBwKBHLbuFeIv5GJ9ckPSl3U6w8",
+        "id": { "kind": "youtube#video", "videoId": "nmXMgqjQzls" },
+        "snippet": {
+          "publishedAt": "2019-09-30T23:25:15Z",
+          "channelId": "UCPGzT4wecuWM0BH9mPiulXg",
+          "title": "Video Tour | Welcome to Wizeline Guadalajara",
+          "description": "Follow Hector Padilla, Wizeline Director of Engineering, for a lively tour of our office.\n\nIn 2018, Wizeline opened its stunning new office in Guadalajara, Jalisco, Mexico, home to over 400 employees. Wizeline has drawn attention for designing an office and culture focused on employee wellness and cultivating talent, earning a Super Espacios award by WeWork, Expansion Mexico, and Top Companies.\n\nRead more about the office here: https://www.wizeline.com/creating-first-class-facilities/\n\nIf you're interested in working with Wizeline and want to experience the culture and tour our offices live, contact us at www.wizeline.com/contact/",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/nmXMgqjQzls/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/nmXMgqjQzls/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/nmXMgqjQzls/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Wizeline",
+          "liveBroadcastContent": "none",
+          "publishTime": "2019-09-30T23:25:15Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "P8BbgAwNjhQaH1iOgWJT8BEqgAc",
+        "id": { "kind": "youtube#video", "videoId": "UTsBkhu-UGw" },
+        "snippet": {
+          "publishedAt": "2018-11-16T17:02:32Z",
+          "channelId": "UCvaUAVzIIGsRNlUDWkQFCeA",
+          "title": "AWS Wizeline Founders Campaign - Capítulo 1 - Emprendedor",
+          "description": "https://aws.amazon.com/es/campaigns/founders/\n\nQuieres saber más? Contáctenos: https://bit.ly/2G3ZbTE",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/UTsBkhu-UGw/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/UTsBkhu-UGw/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/UTsBkhu-UGw/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Amazon Web Services Latin America",
+          "liveBroadcastContent": "none",
+          "publishTime": "2018-11-16T17:02:32Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "zHfOIB2xYbSKDKhLxeoN0sjY0sw",
+        "id": { "kind": "youtube#video", "videoId": "njKgWGJihCI" },
+        "snippet": {
+          "publishedAt": "2017-05-31T22:31:53Z",
+          "channelId": "UCx3uIM1_QLN-nYUXuurSiFQ",
+          "title": "Como nacen las Start-Ups y como se ven en sus inicios? Ejemplos de Start Ups.",
+          "description": "https://posibleplus.mx/curso/playbusiness/85/\n\n\n\n\n\nCurso de PlayBussiness, impartido por Marc Segura",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/njKgWGJihCI/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/njKgWGJihCI/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/njKgWGJihCI/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Posible",
+          "liveBroadcastContent": "none",
+          "publishTime": "2017-05-31T22:31:53Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "7hBaJaubza9wmDVNtbpNQFqrwms",
+        "id": { "kind": "youtube#video", "videoId": "ghGm3sNdGt0" },
+        "snippet": {
+          "publishedAt": "2015-11-03T22:28:35Z",
+          "channelId": "UC55-mxUj5Nj3niXFReG44OQ",
+          "title": "Llegando a Silicon Valley desde Latinoamérica",
+          "description": "Compartimos esta conferencia de Christian que realizó para los amigos de Durango de VirtuaMX donde nos cuenta de Silicon Valley, de sus desafíos y oportunidades, pero más importante, de todos los Emprendedores que luchan día a día por sus proyectos. \n\n----------------------------------------------------------------------\nTodo esto y más, en http://platzi.com\n\n\n¡Suscríbete a nosotros!\nTwitter: http://twitter.com/platzi\nFacebook: http://bit.ly/platzifb\nAquí, en YouTube: http://bit.ly/mejoryt",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/ghGm3sNdGt0/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/ghGm3sNdGt0/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/ghGm3sNdGt0/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Platzi",
+          "liveBroadcastContent": "none",
+          "publishTime": "2015-11-03T22:28:35Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "f0mRYV1MPX6HLHDc4aDeF1vWf3E",
+        "id": { "kind": "youtube#video", "videoId": "NP1gAnbeNno" },
+        "snippet": {
+          "publishedAt": "2019-11-12T20:43:18Z",
+          "channelId": "UCPGzT4wecuWM0BH9mPiulXg",
+          "title": "Wizeline Querétaro | Mexico's New Knowledge Economy (We're hiring!)",
+          "description": "A small but mighty (and growing) team, the Queretaro crew has taken ownership of growing the office and brand, speaking at university events, hosting tech meetups, and working together to achieve Wizeline’s overall goals.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/NP1gAnbeNno/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/NP1gAnbeNno/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/NP1gAnbeNno/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Wizeline",
+          "liveBroadcastContent": "none",
+          "publishTime": "2019-11-12T20:43:18Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "BBm6HOqaM9K2PVs7DPckEF0luas",
+        "id": { "kind": "youtube#video", "videoId": "elEAnqU8KuY" },
+        "snippet": {
+          "publishedAt": "2020-08-31T19:14:29Z",
+          "channelId": "UCPGzT4wecuWM0BH9mPiulXg",
+          "title": "Build your Future with Wizeline's Apprenticeship Programs",
+          "description": "We believe that tech education has the power to change anyone’s future. \n\nWizeline Academy runs apprenticeship programs that are based on a learning-by-doing model. These programs provide you with access to mentorship from senior engineers at Wizeline and give you the opportunity to contribute to real-world projects since your first weeks. \n\nCheck out our open opportunities for these programs in our careers site and boost your career in technology! www.wizeline.com/careeers",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/elEAnqU8KuY/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/elEAnqU8KuY/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/elEAnqU8KuY/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Wizeline",
+          "liveBroadcastContent": "none",
+          "publishTime": "2020-08-31T19:14:29Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "517VJFtC1OcTy0fyCSOBTu6awK0",
+        "id": { "kind": "youtube#video", "videoId": "7dJFraOqcoQ" },
+        "snippet": {
+          "publishedAt": "2019-07-02T17:06:06Z",
+          "channelId": "UCPGzT4wecuWM0BH9mPiulXg",
+          "title": "Why Wizeline? featuring Juan Pablo Villa in Mexico City",
+          "description": "Juan Pablo, known as Gianpa at Wizeline, is a software engineer in our Mexico City office. Gianpa focuses on Android apps, is an integral part of our culture, and participates in Wizeline Academy. Hear why he continues to choose Wizeline.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/7dJFraOqcoQ/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/7dJFraOqcoQ/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/7dJFraOqcoQ/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Wizeline",
+          "liveBroadcastContent": "none",
+          "publishTime": "2019-07-02T17:06:06Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "wrxBWv-TuOcUSusNmFYJZv0gkv0",
+        "id": { "kind": "youtube#video", "videoId": "8yOjGeylZwo" },
+        "snippet": {
+          "publishedAt": "2017-05-23T22:25:56Z",
+          "channelId": "UCPGzT4wecuWM0BH9mPiulXg",
+          "title": "San Francisco to Guadalajara: Why I Moved From the Bay Area to Mexico for My Career",
+          "description": "Claire Wright is a Project Manager at Wizeline, and made the move from Silicon Valley to Guadalajara last year. Watch Claire’s Collaboration Without Borders story to learn about her time abroad, and why she’s having the most valuable experiences of her career!\n\nUp for a challenge? Apply today: www.wizeline.com/careers",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/8yOjGeylZwo/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/8yOjGeylZwo/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/8yOjGeylZwo/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Wizeline",
+          "liveBroadcastContent": "none",
+          "publishTime": "2017-05-23T22:25:56Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "By01-Yt-5HJk3x9_QQguA1o1JvU",
+        "id": { "kind": "youtube#video", "videoId": "hJc7Hjp6gWQ" },
+        "snippet": {
+          "publishedAt": "2017-01-03T17:17:07Z",
+          "channelId": "UCPGzT4wecuWM0BH9mPiulXg",
+          "title": "Wizeline Team Values: Culture & Projects",
+          "description": "Employees at Wizeline make an impact, work on goal-oriented teams with project ownership and enjoy work-life balance. Watch the full video to learn more about why Wizeliners feel at home here!",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/hJc7Hjp6gWQ/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/hJc7Hjp6gWQ/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/hJc7Hjp6gWQ/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Wizeline",
+          "liveBroadcastContent": "none",
+          "publishTime": "2017-01-03T17:17:07Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "CUAq00naFuMOoRmpT6E1dGGi-aE",
+        "id": { "kind": "youtube#video", "videoId": "wnfMmrG52ag" },
+        "snippet": {
+          "publishedAt": "2016-10-27T22:48:23Z",
+          "channelId": "UC55-mxUj5Nj3niXFReG44OQ",
+          "title": "Startups Mexicanas que conocimos en Silicon Valley",
+          "description": "A través de Google y Central, estás empreas llegaron al primer México StartUp Day para dar a conocer sus ideas en el ecosistema de Silicon Valley y en Platzi te los presentamos. \n\nDesde trajes de Iron man hasta ofertas de trabajo cerca de cusa, son ideas que han traido a este grupo de startups mexicanas a San Franciso para hablar de sus empresas con inversionistas y mentores. \n\n----------------------------------------------------------------------\nTodo esto y más, en http://platzi.com\n\n\n\n¡Suscríbete a nosotros!\nFacebook: http://bit.ly/platzifb\nAquí, en YouTube: http://bit.ly/mejoryt",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/wnfMmrG52ag/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/wnfMmrG52ag/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/wnfMmrG52ag/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Platzi",
+          "liveBroadcastContent": "none",
+          "publishTime": "2016-10-27T22:48:23Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "hJbB7gVL8IovfGcL7XlTJoV42RY",
+        "id": { "kind": "youtube#video", "videoId": "rad3y2WUNBY" },
+        "snippet": {
+          "publishedAt": "2016-03-07T22:55:33Z",
+          "channelId": "UC55-mxUj5Nj3niXFReG44OQ",
+          "title": "Cómo llegué a ser CTO en tres historias - Platzi",
+          "description": "\"Aprende a delegar en vez de hacerlo todo. Hay gente mejor que tu\" : Federico Soria. \n\nFederico Soria (@fedesoria), CTO de Pay By Group, te cuenta tres increíbles historias: participó en la obtención de un récord Guinness, su experiencia en una pizzería y cómo el aprendizaje de estas dos lo llevaron a trabajar en Silicon Valley, el ambiente laboral tecnológico más competitivo y exigente del mundo.\n\n---------------------------------------------------------------------\nTodo esto y más, en http://platzi.com\n\n\n\n¡Suscríbete a nosotros!\nTwitter: http://twitter.com/platzi\nFacebook: http://bit.ly/platzifb\nAquí, en YouTube: http://bit.ly/mejoryt\n\n------------------------------------------------------------------------\n\nCTO\n\n¿Que es un CTO?, ¿Como llegar a ser un CTO?, ¿Como puedo ser un buen CTO?.\n\nEl director de tecnología (chief technical officer o chief technology officer, abreviado como CTO) es una posición ejecutiva dentro de una organización en el que la persona que ostenta el título se concentra en asuntos tecnológicos y científicos. A menudo, el CTO es líder de un grupo técnico en una compañía, particularmente construyendo productos o creando servicios que dan cuerpo a tecnologías específicas de la industria. En algunos casos el CTO además maneja el trabajo de investigación y desarrollo en las organizaciones.\n\n----------------------------------------------------------------------\n\nCurso de Ruby on Rails: http://bit.ly/CursoRubyOnRails\nCurso de Estrategia Digital: http://bit.ly/CursoEstrategiaDigital",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/rad3y2WUNBY/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/rad3y2WUNBY/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/rad3y2WUNBY/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Platzi",
+          "liveBroadcastContent": "none",
+          "publishTime": "2016-03-07T22:55:33Z"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "2Qqz8GZl_FjRv5QqRWiuIz9N_xs",
+        "id": { "kind": "youtube#video", "videoId": "CHzlSGRvWPs" },
+        "snippet": {
+          "publishedAt": "2017-03-08T22:41:11Z",
+          "channelId": "UCUsm-fannqOY02PNN67C0KA",
+          "title": "Wizeline",
+          "description": "El plan de Wizeline, una empresa de inteligencia artificial, para ayudar a crecer la comunidad de ciencia de datos en CDMX y todo el país, a través de cursos gratuitos que ya comenzaron a impartirse en la ciudad.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/CHzlSGRvWPs/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/CHzlSGRvWPs/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/CHzlSGRvWPs/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            }
+          },
+          "channelTitle": "Noticieros Televisa",
+          "liveBroadcastContent": "none",
+          "publishTime": "2017-03-08T22:41:11Z"
+        }
+      }
+    ]
+  },
+  "body": "{\n \"kind\": \"youtube#searchListResponse\",\n \"etag\": \"HjQU-oDJv_rutYRNSJfn04T5wlQ\",\n \"nextPageToken\": \"CAwQAA\",\n \"regionCode\": \"MX\",\n \"pageInfo\": {\n \"totalResults\": 88,\n \"resultsPerPage\": 12\n },\n \"items\": [\n {\n \"kind\": \"youtube#searchResult\",\n \"etag\": \"aBwKBHLbuFeIv5GJ9ckPSl3U6w8\",\n \"id\": {\n \"kind\": \"youtube#video\",\n \"videoId\": \"nmXMgqjQzls\"\n },\n \"snippet\": {\n \"publishedAt\": \"2019-09-30T23:25:15Z\",\n \"channelId\": \"UCPGzT4wecuWM0BH9mPiulXg\",\n \"title\": \"Video Tour | Welcome to Wizeline Guadalajara\",\n \"description\": \"Follow Hector Padilla, Wizeline Director of Engineering, for a lively tour of our office.\\n\\nIn 2018, Wizeline opened its stunning new office in Guadalajara, Jalisco, Mexico, home to over 400 employees. Wizeline has drawn attention for designing an office and culture focused on employee wellness and cultivating talent, earning a Super Espacios award by WeWork, Expansion Mexico, and Top Companies.\\n\\nRead more about the office here: https://www.wizeline.com/creating-first-class-facilities/\\n\\nIf you're interested in working with Wizeline and want to experience the culture and tour our offices live, contact us at www.wizeline.com/contact/\",\n \"thumbnails\": {\n \"default\": {\n \"url\": \"https://i.ytimg.com/vi/nmXMgqjQzls/default.jpg\",\n \"width\": 120,\n \"height\": 90\n },\n \"medium\": {\n \"url\": \"https://i.ytimg.com/vi/nmXMgqjQzls/mqdefault.jpg\",\n \"width\": 320,\n \"height\": 180\n },\n \"high\": {\n \"url\": \"https://i.ytimg.com/vi/nmXMgqjQzls/hqdefault.jpg\",\n \"width\": 480,\n \"height\": 360\n }\n },\n \"channelTitle\": \"Wizeline\",\n \"liveBroadcastContent\": \"none\",\n \"publishTime\": \"2019-09-30T23:25:15Z\"\n }\n },\n {\n \"kind\": \"youtube#searchResult\",\n \"etag\": \"P8BbgAwNjhQaH1iOgWJT8BEqgAc\",\n \"id\": {\n \"kind\": \"youtube#video\",\n \"videoId\": \"UTsBkhu-UGw\"\n },\n \"snippet\": {\n \"publishedAt\": \"2018-11-16T17:02:32Z\",\n \"channelId\": \"UCvaUAVzIIGsRNlUDWkQFCeA\",\n \"title\": \"AWS Wizeline Founders Campaign - Capítulo 1 - Emprendedor\",\n \"description\": \"https://aws.amazon.com/es/campaigns/founders/\\n\\nQuieres saber más? Contáctenos: https://bit.ly/2G3ZbTE\",\n \"thumbnails\": {\n \"default\": {\n \"url\": \"https://i.ytimg.com/vi/UTsBkhu-UGw/default.jpg\",\n \"width\": 120,\n \"height\": 90\n },\n \"medium\": {\n \"url\": \"https://i.ytimg.com/vi/UTsBkhu-UGw/mqdefault.jpg\",\n \"width\": 320,\n \"height\": 180\n },\n \"high\": {\n \"url\": \"https://i.ytimg.com/vi/UTsBkhu-UGw/hqdefault.jpg\",\n \"width\": 480,\n \"height\": 360\n }\n },\n \"channelTitle\": \"Amazon Web Services Latin America\",\n \"liveBroadcastContent\": \"none\",\n \"publishTime\": \"2018-11-16T17:02:32Z\"\n }\n },\n {\n \"kind\": \"youtube#searchResult\",\n \"etag\": \"zHfOIB2xYbSKDKhLxeoN0sjY0sw\",\n \"id\": {\n \"kind\": \"youtube#video\",\n \"videoId\": \"njKgWGJihCI\"\n },\n \"snippet\": {\n \"publishedAt\": \"2017-05-31T22:31:53Z\",\n \"channelId\": \"UCx3uIM1_QLN-nYUXuurSiFQ\",\n \"title\": \"Como nacen las Start-Ups y como se ven en sus inicios? Ejemplos de Start Ups.\",\n \"description\": \"https://posibleplus.mx/curso/playbusiness/85/\\n\\n\\n\\n\\n\\nCurso de PlayBussiness, impartido por Marc Segura\",\n \"thumbnails\": {\n \"default\": {\n \"url\": \"https://i.ytimg.com/vi/njKgWGJihCI/default.jpg\",\n \"width\": 120,\n \"height\": 90\n },\n \"medium\": {\n \"url\": \"https://i.ytimg.com/vi/njKgWGJihCI/mqdefault.jpg\",\n \"width\": 320,\n \"height\": 180\n },\n \"high\": {\n \"url\": \"https://i.ytimg.com/vi/njKgWGJihCI/hqdefault.jpg\",\n \"width\": 480,\n \"height\": 360\n }\n },\n \"channelTitle\": \"Posible\",\n \"liveBroadcastContent\": \"none\",\n \"publishTime\": \"2017-05-31T22:31:53Z\"\n }\n },\n {\n \"kind\": \"youtube#searchResult\",\n \"etag\": \"7hBaJaubza9wmDVNtbpNQFqrwms\",\n \"id\": {\n \"kind\": \"youtube#video\",\n \"videoId\": \"ghGm3sNdGt0\"\n },\n \"snippet\": {\n \"publishedAt\": \"2015-11-03T22:28:35Z\",\n \"channelId\": \"UC55-mxUj5Nj3niXFReG44OQ\",\n \"title\": \"Llegando a Silicon Valley desde Latinoamérica\",\n \"description\": \"Compartimos esta conferencia de Christian que realizó para los amigos de Durango de VirtuaMX donde nos cuenta de Silicon Valley, de sus desafíos y oportunidades, pero más importante, de todos los Emprendedores que luchan día a día por sus proyectos. \\n\\n----------------------------------------------------------------------\\nTodo esto y más, en http://platzi.com\\n\\n\\n¡Suscríbete a nosotros!\\nTwitter: http://twitter.com/platzi\\nFacebook: http://bit.ly/platzifb\\nAquí, en YouTube: http://bit.ly/mejoryt\",\n \"thumbnails\": {\n \"default\": {\n \"url\": \"https://i.ytimg.com/vi/ghGm3sNdGt0/default.jpg\",\n \"width\": 120,\n \"height\": 90\n },\n \"medium\": {\n \"url\": \"https://i.ytimg.com/vi/ghGm3sNdGt0/mqdefault.jpg\",\n \"width\": 320,\n \"height\": 180\n },\n \"high\": {\n \"url\": \"https://i.ytimg.com/vi/ghGm3sNdGt0/hqdefault.jpg\",\n \"width\": 480,\n \"height\": 360\n }\n },\n \"channelTitle\": \"Platzi\",\n \"liveBroadcastContent\": \"none\",\n \"publishTime\": \"2015-11-03T22:28:35Z\"\n }\n },\n {\n \"kind\": \"youtube#searchResult\",\n \"etag\": \"f0mRYV1MPX6HLHDc4aDeF1vWf3E\",\n \"id\": {\n \"kind\": \"youtube#video\",\n \"videoId\": \"NP1gAnbeNno\"\n },\n \"snippet\": {\n \"publishedAt\": \"2019-11-12T20:43:18Z\",\n \"channelId\": \"UCPGzT4wecuWM0BH9mPiulXg\",\n \"title\": \"Wizeline Querétaro | Mexico's New Knowledge Economy (We're hiring!)\",\n \"description\": \"A small but mighty (and growing) team, the Queretaro crew has taken ownership of growing the office and brand, speaking at university events, hosting tech meetups, and working together to achieve Wizeline’s overall goals.\",\n \"thumbnails\": {\n \"default\": {\n \"url\": \"https://i.ytimg.com/vi/NP1gAnbeNno/default.jpg\",\n \"width\": 120,\n \"height\": 90\n },\n \"medium\": {\n \"url\": \"https://i.ytimg.com/vi/NP1gAnbeNno/mqdefault.jpg\",\n \"width\": 320,\n \"height\": 180\n },\n \"high\": {\n \"url\": \"https://i.ytimg.com/vi/NP1gAnbeNno/hqdefault.jpg\",\n \"width\": 480,\n \"height\": 360\n }\n },\n \"channelTitle\": \"Wizeline\",\n \"liveBroadcastContent\": \"none\",\n \"publishTime\": \"2019-11-12T20:43:18Z\"\n }\n },\n {\n \"kind\": \"youtube#searchResult\",\n \"etag\": \"BBm6HOqaM9K2PVs7DPckEF0luas\",\n \"id\": {\n \"kind\": \"youtube#video\",\n \"videoId\": \"elEAnqU8KuY\"\n },\n \"snippet\": {\n \"publishedAt\": \"2020-08-31T19:14:29Z\",\n \"channelId\": \"UCPGzT4wecuWM0BH9mPiulXg\",\n \"title\": \"Build your Future with Wizeline's Apprenticeship Programs\",\n \"description\": \"We believe that tech education has the power to change anyone’s future. \\n\\nWizeline Academy runs apprenticeship programs that are based on a learning-by-doing model. These programs provide you with access to mentorship from senior engineers at Wizeline and give you the opportunity to contribute to real-world projects since your first weeks. \\n\\nCheck out our open opportunities for these programs in our careers site and boost your career in technology! www.wizeline.com/careeers\",\n \"thumbnails\": {\n \"default\": {\n \"url\": \"https://i.ytimg.com/vi/elEAnqU8KuY/default.jpg\",\n \"width\": 120,\n \"height\": 90\n },\n \"medium\": {\n \"url\": \"https://i.ytimg.com/vi/elEAnqU8KuY/mqdefault.jpg\",\n \"width\": 320,\n \"height\": 180\n },\n \"high\": {\n \"url\": \"https://i.ytimg.com/vi/elEAnqU8KuY/hqdefault.jpg\",\n \"width\": 480,\n \"height\": 360\n }\n },\n \"channelTitle\": \"Wizeline\",\n \"liveBroadcastContent\": \"none\",\n \"publishTime\": \"2020-08-31T19:14:29Z\"\n }\n },\n {\n \"kind\": \"youtube#searchResult\",\n \"etag\": \"517VJFtC1OcTy0fyCSOBTu6awK0\",\n \"id\": {\n \"kind\": \"youtube#video\",\n \"videoId\": \"7dJFraOqcoQ\"\n },\n \"snippet\": {\n \"publishedAt\": \"2019-07-02T17:06:06Z\",\n \"channelId\": \"UCPGzT4wecuWM0BH9mPiulXg\",\n \"title\": \"Why Wizeline? featuring Juan Pablo Villa in Mexico City\",\n \"description\": \"Juan Pablo, known as Gianpa at Wizeline, is a software engineer in our Mexico City office. Gianpa focuses on Android apps, is an integral part of our culture, and participates in Wizeline Academy. Hear why he continues to choose Wizeline.\",\n \"thumbnails\": {\n \"default\": {\n \"url\": \"https://i.ytimg.com/vi/7dJFraOqcoQ/default.jpg\",\n \"width\": 120,\n \"height\": 90\n },\n \"medium\": {\n \"url\": \"https://i.ytimg.com/vi/7dJFraOqcoQ/mqdefault.jpg\",\n \"width\": 320,\n \"height\": 180\n },\n \"high\": {\n \"url\": \"https://i.ytimg.com/vi/7dJFraOqcoQ/hqdefault.jpg\",\n \"width\": 480,\n \"height\": 360\n }\n },\n \"channelTitle\": \"Wizeline\",\n \"liveBroadcastContent\": \"none\",\n \"publishTime\": \"2019-07-02T17:06:06Z\"\n }\n },\n {\n \"kind\": \"youtube#searchResult\",\n \"etag\": \"wrxBWv-TuOcUSusNmFYJZv0gkv0\",\n \"id\": {\n \"kind\": \"youtube#video\",\n \"videoId\": \"8yOjGeylZwo\"\n },\n \"snippet\": {\n \"publishedAt\": \"2017-05-23T22:25:56Z\",\n \"channelId\": \"UCPGzT4wecuWM0BH9mPiulXg\",\n \"title\": \"San Francisco to Guadalajara: Why I Moved From the Bay Area to Mexico for My Career\",\n \"description\": \"Claire Wright is a Project Manager at Wizeline, and made the move from Silicon Valley to Guadalajara last year. Watch Claire’s Collaboration Without Borders story to learn about her time abroad, and why she’s having the most valuable experiences of her career!\\n\\nUp for a challenge? Apply today: www.wizeline.com/careers\",\n \"thumbnails\": {\n \"default\": {\n \"url\": \"https://i.ytimg.com/vi/8yOjGeylZwo/default.jpg\",\n \"width\": 120,\n \"height\": 90\n },\n \"medium\": {\n \"url\": \"https://i.ytimg.com/vi/8yOjGeylZwo/mqdefault.jpg\",\n \"width\": 320,\n \"height\": 180\n },\n \"high\": {\n \"url\": \"https://i.ytimg.com/vi/8yOjGeylZwo/hqdefault.jpg\",\n \"width\": 480,\n \"height\": 360\n }\n },\n \"channelTitle\": \"Wizeline\",\n \"liveBroadcastContent\": \"none\",\n \"publishTime\": \"2017-05-23T22:25:56Z\"\n }\n },\n {\n \"kind\": \"youtube#searchResult\",\n \"etag\": \"By01-Yt-5HJk3x9_QQguA1o1JvU\",\n \"id\": {\n \"kind\": \"youtube#video\",\n \"videoId\": \"hJc7Hjp6gWQ\"\n },\n \"snippet\": {\n \"publishedAt\": \"2017-01-03T17:17:07Z\",\n \"channelId\": \"UCPGzT4wecuWM0BH9mPiulXg\",\n \"title\": \"Wizeline Team Values: Culture & Projects\",\n \"description\": \"Employees at Wizeline make an impact, work on goal-oriented teams with project ownership and enjoy work-life balance. Watch the full video to learn more about why Wizeliners feel at home here!\",\n \"thumbnails\": {\n \"default\": {\n \"url\": \"https://i.ytimg.com/vi/hJc7Hjp6gWQ/default.jpg\",\n \"width\": 120,\n \"height\": 90\n },\n \"medium\": {\n \"url\": \"https://i.ytimg.com/vi/hJc7Hjp6gWQ/mqdefault.jpg\",\n \"width\": 320,\n \"height\": 180\n },\n \"high\": {\n \"url\": \"https://i.ytimg.com/vi/hJc7Hjp6gWQ/hqdefault.jpg\",\n \"width\": 480,\n \"height\": 360\n }\n },\n \"channelTitle\": \"Wizeline\",\n \"liveBroadcastContent\": \"none\",\n \"publishTime\": \"2017-01-03T17:17:07Z\"\n }\n },\n {\n \"kind\": \"youtube#searchResult\",\n \"etag\": \"CUAq00naFuMOoRmpT6E1dGGi-aE\",\n \"id\": {\n \"kind\": \"youtube#video\",\n \"videoId\": \"wnfMmrG52ag\"\n },\n \"snippet\": {\n \"publishedAt\": \"2016-10-27T22:48:23Z\",\n \"channelId\": \"UC55-mxUj5Nj3niXFReG44OQ\",\n \"title\": \"Startups Mexicanas que conocimos en Silicon Valley\",\n \"description\": \"A través de Google y Central, estás empreas llegaron al primer México StartUp Day para dar a conocer sus ideas en el ecosistema de Silicon Valley y en Platzi te los presentamos. \\n\\nDesde trajes de Iron man hasta ofertas de trabajo cerca de cusa, son ideas que han traido a este grupo de startups mexicanas a San Franciso para hablar de sus empresas con inversionistas y mentores. \\n\\n----------------------------------------------------------------------\\nTodo esto y más, en http://platzi.com\\n\\n\\n\\n¡Suscríbete a nosotros!\\nFacebook: http://bit.ly/platzifb\\nAquí, en YouTube: http://bit.ly/mejoryt\",\n \"thumbnails\": {\n \"default\": {\n \"url\": \"https://i.ytimg.com/vi/wnfMmrG52ag/default.jpg\",\n \"width\": 120,\n \"height\": 90\n },\n \"medium\": {\n \"url\": \"https://i.ytimg.com/vi/wnfMmrG52ag/mqdefault.jpg\",\n \"width\": 320,\n \"height\": 180\n },\n \"high\": {\n \"url\": \"https://i.ytimg.com/vi/wnfMmrG52ag/hqdefault.jpg\",\n \"width\": 480,\n \"height\": 360\n }\n },\n \"channelTitle\": \"Platzi\",\n \"liveBroadcastContent\": \"none\",\n \"publishTime\": \"2016-10-27T22:48:23Z\"\n }\n },\n {\n \"kind\": \"youtube#searchResult\",\n \"etag\": \"hJbB7gVL8IovfGcL7XlTJoV42RY\",\n \"id\": {\n \"kind\": \"youtube#video\",\n \"videoId\": \"rad3y2WUNBY\"\n },\n \"snippet\": {\n \"publishedAt\": \"2016-03-07T22:55:33Z\",\n \"channelId\": \"UC55-mxUj5Nj3niXFReG44OQ\",\n \"title\": \"Cómo llegué a ser CTO en tres historias - Platzi\",\n \"description\": \"\\\"Aprende a delegar en vez de hacerlo todo. Hay gente mejor que tu\\\" : Federico Soria. \\n\\nFederico Soria (@fedesoria), CTO de Pay By Group, te cuenta tres increíbles historias: participó en la obtención de un récord Guinness, su experiencia en una pizzería y cómo el aprendizaje de estas dos lo llevaron a trabajar en Silicon Valley, el ambiente laboral tecnológico más competitivo y exigente del mundo.\\n\\n---------------------------------------------------------------------\\nTodo esto y más, en http://platzi.com\\n\\n\\n\\n¡Suscríbete a nosotros!\\nTwitter: http://twitter.com/platzi\\nFacebook: http://bit.ly/platzifb\\nAquí, en YouTube: http://bit.ly/mejoryt\\n\\n------------------------------------------------------------------------\\n\\nCTO\\n\\n¿Que es un CTO?, ¿Como llegar a ser un CTO?, ¿Como puedo ser un buen CTO?.\\n\\nEl director de tecnología (chief technical officer o chief technology officer, abreviado como CTO) es una posición ejecutiva dentro de una organización en el que la persona que ostenta el título se concentra en asuntos tecnológicos y científicos. A menudo, el CTO es líder de un grupo técnico en una compañía, particularmente construyendo productos o creando servicios que dan cuerpo a tecnologías específicas de la industria. En algunos casos el CTO además maneja el trabajo de investigación y desarrollo en las organizaciones.\\n\\n----------------------------------------------------------------------\\n\\nCurso de Ruby on Rails: http://bit.ly/CursoRubyOnRails\\nCurso de Estrategia Digital: http://bit.ly/CursoEstrategiaDigital\",\n \"thumbnails\": {\n \"default\": {\n \"url\": \"https://i.ytimg.com/vi/rad3y2WUNBY/default.jpg\",\n \"width\": 120,\n \"height\": 90\n },\n \"medium\": {\n \"url\": \"https://i.ytimg.com/vi/rad3y2WUNBY/mqdefault.jpg\",\n \"width\": 320,\n \"height\": 180\n },\n \"high\": {\n \"url\": \"https://i.ytimg.com/vi/rad3y2WUNBY/hqdefault.jpg\",\n \"width\": 480,\n \"height\": 360\n }\n },\n \"channelTitle\": \"Platzi\",\n \"liveBroadcastContent\": \"none\",\n \"publishTime\": \"2016-03-07T22:55:33Z\"\n }\n },\n {\n \"kind\": \"youtube#searchResult\",\n \"etag\": \"2Qqz8GZl_FjRv5QqRWiuIz9N_xs\",\n \"id\": {\n \"kind\": \"youtube#video\",\n \"videoId\": \"CHzlSGRvWPs\"\n },\n \"snippet\": {\n \"publishedAt\": \"2017-03-08T22:41:11Z\",\n \"channelId\": \"UCUsm-fannqOY02PNN67C0KA\",\n \"title\": \"Wizeline\",\n \"description\": \"El plan de Wizeline, una empresa de inteligencia artificial, para ayudar a crecer la comunidad de ciencia de datos en CDMX y todo el país, a través de cursos gratuitos que ya comenzaron a impartirse en la ciudad.\",\n \"thumbnails\": {\n \"default\": {\n \"url\": \"https://i.ytimg.com/vi/CHzlSGRvWPs/default.jpg\",\n \"width\": 120,\n \"height\": 90\n },\n \"medium\": {\n \"url\": \"https://i.ytimg.com/vi/CHzlSGRvWPs/mqdefault.jpg\",\n \"width\": 320,\n \"height\": 180\n },\n \"high\": {\n \"url\": \"https://i.ytimg.com/vi/CHzlSGRvWPs/hqdefault.jpg\",\n \"width\": 480,\n \"height\": 360\n }\n },\n \"channelTitle\": \"Noticieros Televisa\",\n \"liveBroadcastContent\": \"none\",\n \"publishTime\": \"2017-03-08T22:41:11Z\"\n }\n }\n ]\n}\n",
+  "headers": {
+    "cache-control": "private",
+    "content-encoding": "gzip",
+    "content-length": "4305",
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 27 Sep 2020 16:44:07 GMT",
+    "server": "scaffolding on HTTPServer2",
+    "vary": "Origin, X-Origin, Referer"
+  },
+  "status": 200,
+  "statusText": null
+}

@@ -1,1 +1,6 @@
 export { default as Button } from './Button'
+export { default as Drawer } from './Drawer'
+export { default as Flex } from './Flex'
+export { default as HamburgerButton } from './HamburgerButton'
+export { default as Text } from './Text'
+export { default as SearchBar } from './SearchBar'

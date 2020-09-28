@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import App from 'modules/App'
 
 ReactDOM.render(
   <React.StrictMode>
-    <div>Initial</div>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 )

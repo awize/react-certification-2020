@@ -1,0 +1,78 @@
+{
+  "result": {
+    "kind": "youtube#videoListResponse",
+    "etag": "RfwyUKZnfca_i351Fa5Gj0OahoQ",
+    "items": [
+      {
+        "kind": "youtube#video",
+        "etag": "pnV2i-y5896AFARsjunVhVfAC_k",
+        "id": "Po3VwR_NNGk",
+        "snippet": {
+          "publishedAt": "2019-03-05T03:52:55Z",
+          "channelId": "UCXmAOGwFYxIq5qrScJeeV4g",
+          "title": "Wizeline hace sentir a empleados como en casa",
+          "description": "En el 2014, Bismarck fundó Wizeline, compañía tecnológica que trabaja con los corporativos ofreciendo una plataforma para que desarrollen software de forma rápida.",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/Po3VwR_NNGk/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/Po3VwR_NNGk/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/Po3VwR_NNGk/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/Po3VwR_NNGk/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/Po3VwR_NNGk/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "El Economista TV",
+          "tags": ["Wizeline", "Tecnología"],
+          "categoryId": "25",
+          "liveBroadcastContent": "none",
+          "localized": {
+            "title": "Wizeline hace sentir a empleados como en casa",
+            "description": "En el 2014, Bismarck fundó Wizeline, compañía tecnológica que trabaja con los corporativos ofreciendo una plataforma para que desarrollen software de forma rápida."
+          },
+          "defaultAudioLanguage": "es-419"
+        },
+        "statistics": {
+          "viewCount": "3493",
+          "likeCount": "43",
+          "dislikeCount": "0",
+          "favoriteCount": "0",
+          "commentCount": "4"
+        },
+        "player": {
+          "embedHtml": "<iframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/Po3VwR_NNGk\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+        }
+      }
+    ],
+    "pageInfo": { "totalResults": 1, "resultsPerPage": 1 }
+  },
+  "body": "{\n  \"kind\": \"youtube#videoListResponse\",\n  \"etag\": \"RfwyUKZnfca_i351Fa5Gj0OahoQ\",\n  \"items\": [\n    {\n      \"kind\": \"youtube#video\",\n      \"etag\": \"pnV2i-y5896AFARsjunVhVfAC_k\",\n      \"id\": \"Po3VwR_NNGk\",\n      \"snippet\": {\n        \"publishedAt\": \"2019-03-05T03:52:55Z\",\n        \"channelId\": \"UCXmAOGwFYxIq5qrScJeeV4g\",\n        \"title\": \"Wizeline hace sentir a empleados como en casa\",\n        \"description\": \"En el 2014, Bismarck fundó Wizeline, compañía tecnológica que trabaja con los corporativos ofreciendo una plataforma para que desarrollen software de forma rápida.\",\n        \"thumbnails\": {\n          \"default\": {\n            \"url\": \"https://i.ytimg.com/vi/Po3VwR_NNGk/default.jpg\",\n            \"width\": 120,\n            \"height\": 90\n          },\n          \"medium\": {\n            \"url\": \"https://i.ytimg.com/vi/Po3VwR_NNGk/mqdefault.jpg\",\n            \"width\": 320,\n            \"height\": 180\n          },\n          \"high\": {\n            \"url\": \"https://i.ytimg.com/vi/Po3VwR_NNGk/hqdefault.jpg\",\n            \"width\": 480,\n            \"height\": 360\n          },\n          \"standard\": {\n            \"url\": \"https://i.ytimg.com/vi/Po3VwR_NNGk/sddefault.jpg\",\n            \"width\": 640,\n            \"height\": 480\n          },\n          \"maxres\": {\n            \"url\": \"https://i.ytimg.com/vi/Po3VwR_NNGk/maxresdefault.jpg\",\n            \"width\": 1280,\n            \"height\": 720\n          }\n        },\n        \"channelTitle\": \"El Economista TV\",\n        \"tags\": [\n          \"Wizeline\",\n          \"Tecnología\"\n        ],\n        \"categoryId\": \"25\",\n        \"liveBroadcastContent\": \"none\",\n        \"localized\": {\n          \"title\": \"Wizeline hace sentir a empleados como en casa\",\n          \"description\": \"En el 2014, Bismarck fundó Wizeline, compañía tecnológica que trabaja con los corporativos ofreciendo una plataforma para que desarrollen software de forma rápida.\"\n        },\n        \"defaultAudioLanguage\": \"es-419\"\n      },\n      \"statistics\": {\n        \"viewCount\": \"3493\",\n        \"likeCount\": \"43\",\n        \"dislikeCount\": \"0\",\n        \"favoriteCount\": \"0\",\n        \"commentCount\": \"4\"\n      },\n      \"player\": {\n        \"embedHtml\": \"\\u003ciframe width=\\\"480\\\" height=\\\"270\\\" src=\\\"//www.youtube.com/embed/Po3VwR_NNGk\\\" frameborder=\\\"0\\\" allow=\\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\\\" allowfullscreen\\u003e\\u003c/iframe\\u003e\"\n      }\n    }\n  ],\n  \"pageInfo\": {\n    \"totalResults\": 1,\n    \"resultsPerPage\": 1\n  }\n}\n",
+  "headers": {
+    "cache-control": "private",
+    "content-encoding": "gzip",
+    "content-length": "926",
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 27 Sep 2020 17:12:19 GMT",
+    "server": "scaffolding on HTTPServer2",
+    "vary": "Origin, X-Origin, Referer"
+  },
+  "status": 200,
+  "statusText": null
+}
