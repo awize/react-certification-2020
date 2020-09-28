@@ -36,11 +36,11 @@ const VideoSearchBar = () => {
     },
     [youtubeAPI, dispatch]
   )
-
+  console.log({ youtubeAPI })
   useEffect(() => {
     searchVideos(q)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [searchVideos])
+  }, [searchVideos, youtubeAPI])
 
   const onSearch = (param) => {
     searchVideos(param)
