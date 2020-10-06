@@ -6,9 +6,8 @@ export const decodeText = (text) => {
 }
 
 export const formatVideosResponse = (response) => {
-  const {
-    result: { items }
-  } = response
+  if (!response) return []
+  const { result: { items = [] } = {} } = response
 
   return items.map((item) => {
     const {
@@ -26,9 +25,9 @@ export const formatVideosResponse = (response) => {
 }
 
 export const formatSingleVideo = (videoInfo) => {
-  const {
-    result: { items }
-  } = videoInfo
+  if (!videoInfo) return {}
+  const { result: { items = [] } = {} } = videoInfo
+
   let formattedInfo = {}
   if (items.length > 0) {
     const currentVideo = items[0]

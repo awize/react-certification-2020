@@ -55,10 +55,12 @@ const VideoPlayer = () => {
 
   const statistics = [
     {
+      id: 'views',
       icon: Eye,
       value: videoData.viewCount || ''
     },
     {
+      id: 'likes',
       icon: Like,
       value: videoData.likeCount || 0
     }
@@ -122,9 +124,9 @@ const VideoPlayer = () => {
             margin-right: 10px;
           `}
         >
-          {statistics.map(({ icon: Icon, value }) => {
+          {statistics.map(({ icon: Icon, value, id }) => {
             return (
-              <StatisticContainerStyled container center>
+              <StatisticContainerStyled container center key={`${id}-statistic-icon`}>
                 <Icon />
                 <p
                   css={`

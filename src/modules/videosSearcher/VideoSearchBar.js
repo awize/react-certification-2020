@@ -27,8 +27,7 @@ const VideoSearchBar = () => {
           dispatch({
             type: TYPE.SEARCH_VIDEOS_SUCCESS,
             payload: {
-              videos: formatVideosResponse(response),
-              totalPages: 20
+              videos: formatVideosResponse(response)
             }
           })
         }
@@ -36,7 +35,7 @@ const VideoSearchBar = () => {
     },
     [youtubeAPI, dispatch]
   )
-  console.log({ youtubeAPI })
+
   useEffect(() => {
     searchVideos(q)
     // eslint-disable-next-line react-hooks/exhaustive-deps
