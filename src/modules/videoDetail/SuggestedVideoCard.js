@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHistory } from 'react-router'
+import { useHistory } from 'react-router-dom'
 import styled from 'styled-components'
 import { Text } from 'ui'
 
@@ -27,8 +27,13 @@ const CoverImageStyled = styled.img`
 `
 const SuggestedVideoCard = ({ title, thumbnail, videoId }) => {
   const history = useHistory()
+
+  const goToSuggestion = () => {
+    history.push(`/video/${videoId}`)
+  }
+
   return (
-    <SuggestedVideoCardContainer onClick={() => history.push(`/video/${videoId}`)}>
+    <SuggestedVideoCardContainer onClick={goToSuggestion}>
       <CoverImageStyled src={thumbnail} alt="" />
       <Text
         css={`

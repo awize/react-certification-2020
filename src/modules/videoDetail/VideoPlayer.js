@@ -33,15 +33,18 @@ const VideoPlayer = () => {
   const { videoId } = useParams()
   const youtubeAPI = useYoutubeAPI()
   const [videoData, setVideoData] = useState({})
+  const [isLoading, setIsLoading] = useState(false)
   const isAlreadyFavorite =
     favoriteVideos.filter((favorite) => favorite.videoId === videoId).length > 0
 
   const getVideoData = useCallback(async () => {
     if (youtubeAPI) {
+      setIsLoading(true)
       const response = await youtubeAPI.videos.list({
         part: 'snippet,statistics,player',
         id: videoId
       })
+      setIsLoading(false)
 
       if (response) {
         setVideoData(formatSingleVideo(response))
@@ -50,7 +53,7 @@ const VideoPlayer = () => {
   }, [videoId, youtubeAPI])
 
   useEffect(() => {
-    getVideoData()
+    if (youtubeAPI) getVideoData()
   }, [videoId, youtubeAPI, getVideoData])
 
   const statistics = [
@@ -105,11 +108,13 @@ const VideoPlayer = () => {
         padding: 20px;
       `}
     >
-      <VideoContainerStyled
-        title="title"
-        src={`https://www.youtube.com/embed/${videoId}`}
-        height={450}
-      />
+      {!isLoading && (
+        <VideoContainerStyled
+          title="title"
+          src={`https://www.youtube.com/embed/${videoId}`}
+          height={450}
+        />
+      )}
       <Flex
         container
         justify="space-between"
@@ -126,7 +131,11 @@ const VideoPlayer = () => {
         >
           {statistics.map(({ icon: Icon, value, id }) => {
             return (
-              <StatisticContainerStyled container center key={`${id}-statistic-icon`}>
+              <StatisticContainerStyled
+                container
+                center
+                key={`${id}-statistic-icon-${value}`}
+              >
                 <Icon />
                 <p
                   css={`

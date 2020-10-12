@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useState } from 'react'
-import { useParams } from 'react-router'
+import { useParams } from 'react-router-dom'
 import { useYoutubeAPI } from 'hooks'
 import { Flex, Text } from 'ui'
 
@@ -8,6 +8,7 @@ import { formatVideosResponse } from '../../utils/helpers'
 
 const SuggestedList = () => {
   const { videoId } = useParams()
+
   const youtubeAPI = useYoutubeAPI()
   const [suggestedVideos, setsuggestedVideos] = useState([])
 

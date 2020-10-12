@@ -14,7 +14,7 @@ const App = () => {
       <AuthProvider>
         <SearcherProvider>
           <FavoritesProvider>
-            <Router>
+            <Router basename="/">
               <>
                 <Nav />
                 <Switch>
@@ -23,9 +23,6 @@ const App = () => {
                   </Route>
                   <Route exact path="/video/:videoId">
                     <VideoDetail />
-                  </Route>
-                  <Route exact path="/login">
-                    <div>Login</div>
                   </Route>
                   <PrivateRoute exact path="/favorites">
                     <Favorites />
