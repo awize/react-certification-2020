@@ -35,11 +35,26 @@ const SuggestedList = () => {
       container
       direction="column"
       css={`
-        max-height: calc(100vh - 70px);
-        overflow: auto;
+        ${({ theme }) => theme.mixins.mediaQueries.desktop`
+          max-height: calc(100vh - 70px);
+          overflow: auto;
+        `}
       `}
     >
-      <Text>Sugerencias</Text>
+      <Text
+        css={`
+          font-size: 30px;
+          font-weight: bold;
+          padding: 10px 20px;
+          border-top: 1px solid gray;
+          border-bottom: 1px solid gray;
+          ${({ theme }) => theme.mixins.mediaQueries.desktop`
+            border-top: 0;
+          `}
+        `}
+      >
+        Sugerencias
+      </Text>
 
       <Flex container wrap="wrap">
         {suggestedVideos.map((suggestedVideo) => (

@@ -4,11 +4,31 @@ import { SuggestedList, VideoPlayer } from 'modules/videoDetail'
 
 const VideoDetail = () => {
   return (
-    <Flex container>
-      <Flex col={16}>
+    <Flex
+      container
+      css={`
+        flex-direction: column;
+        ${({ theme }) => theme.mixins.mediaQueries.desktop`
+          flex-direction: row;
+        `}
+      `}
+    >
+      <Flex
+        css={`
+          ${({ theme }) => theme.mixins.mediaQueries.desktop`
+            flex-basis: 75%;
+          `}
+        `}
+      >
         <VideoPlayer />
       </Flex>
-      <Flex col={8}>
+      <Flex
+        css={`
+          ${({ theme }) => theme.mixins.mediaQueries.desktop`
+            flex-basis: 25%;
+          `}
+        `}
+      >
         <SuggestedList />
       </Flex>
     </Flex>

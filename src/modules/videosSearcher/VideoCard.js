@@ -44,9 +44,26 @@ const VideoCard = ({ title, description, thumbnail, videoId, ...props }) => {
     <VideoCardStyled
       container
       {...props}
+      css={`
+        flex-direction: column;
+        height: 100%;
+        ${({ theme }) => theme.mixins.mediaQueries.ipad`
+          flex-direction: row;
+          height: initial;
+      `}
+      `}
       onClick={() => history.push(`/video/${videoId}`)}
     >
-      <Flex col={6}>
+      <Flex
+        css={`
+          flex-basis: 100%;
+          height: 140px;
+          ${({ theme }) => theme.mixins.mediaQueries.ipad`
+               flex-basis: 25%;
+               height: initial;
+          `}
+        `}
+      >
         <VideoImageStyled src={thumbnail} alt="" />
       </Flex>
       <Flex container direction="column" col={18}>
